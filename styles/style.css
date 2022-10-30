@@ -6,3 +6,37 @@ Green: #00B172
 White: #FFF
 
 */
+
+/* CONFIGURACION PARA TODA LA PÁGINA */
+
+html {
+    font-family: releway, sans-serif;
+    font-size: 16px;
+}
+
+/* Configuración sect1*/ 
+
+
+#sect1 nav img {
+    max-width: 20vh;
+}
+
+.header {
+    background-image: url('../images/landing.jpg');
+    background-size: cover;
+    height:90vh;
+}
+
+h3, h1 {
+    color: white;
+}
+#heading {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+
+
+
+
