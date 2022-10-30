@@ -14,27 +14,64 @@ html {
     font-size: 16px;
 }
 
-/* Configuración sect1*/ 
+/* configuracion NAV bar */
 
-
-#sect1 nav img {
-    max-width: 20vh;
+nav {
+    min-width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+}
+nav ul {
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    right:2vh
 }
 
+nav ul li {
+    padding: 2vh 3vh;
+    font-weight: 100;
+}
+    
+nav img {
+    max-width: 20vh;
+    padding: 2vh 3vh;
+
+}
+
+/* Configuración sect1*/ 
 .header {
     background-image: url('../images/landing.jpg');
     background-size: cover;
-    height:90vh;
+    height:100vh;
 }
 
-h3, h1 {
+ h1 {
     color: white;
 }
 #heading {
-    font-size: 4rem;
+    font-size: 5.5rem;
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 40vh;
+    padding-bottom: 6vh;
 }
+
+#sect1 p {
+    padding-top: 1.5%;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.2vh;
+    font-size: 1.75rem;
+    ;
+}
+
+/*section 2*/
+
+
 
 
 
