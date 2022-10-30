@@ -1,17 +1,7 @@
-/*
-Colors:
-
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
-
-*/
-
-/* CONFIGURACION PARA TODA LA PÁGINA */
-
 html {
     font-family: releway, sans-serif;
     font-size: 16px;
+    color: #1A1A1A;
 }
 
 /* configuracion NAV bar */
@@ -75,7 +65,10 @@ nav img {
     text-align: center;
     background-color: white;
 }
-
+#sect2 img {
+    max-width: 15vh;
+    margin-bottom: 2vh;
+}
 #sect2 #subheading{
 display:inline-block;
     margin-top: 4vh;
@@ -89,41 +82,31 @@ display:inline-block;
     border-color:#1DB954;;
     border-style: solid;
 }
-
-#sect2 img {
-    max-width: 15vh;
-    margin-bottom: 2vh;
-}
-
 #sect2 div {
     display:flex;
-    align-items: center;
+    align-items: baseline;
     justify-items: center;
     flex-direction: row;
-    margin: 0 10vh;
     justify-content: space-evenly;
     padding-bottom: 18vh;
+    flex-wrap: wrap;
 }
-
-#sect2 div article {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    max-width: 30vh;
-}
-
 #sect2 h4{
     color:#1DB954;
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 2vh;
 }
-
+#sect2 div article {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
 #sect2 p {
     font-weight: 100;
     font-size: 1.75rem;
+    max-width: 30vh;
 }
 
 
