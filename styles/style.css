@@ -3,6 +3,11 @@ html {
     font-size: 16px;
     color: #1A1A1A;
 }
+html, body {
+    height: fit-content;
+    min-height: 100%;
+    width: 100%;
+}
 
 /* configuracion NAV bar */
 
@@ -40,6 +45,7 @@ nav img {
     background-image: url('../images/landing.jpg');
     background-size: cover;
     height:100vh;
+    width: 100%;
 }
 
  h1 {
@@ -175,45 +181,88 @@ nav img {
     font-size: 1.2rem;
 }
 
-
 #sect4 {
-    position:relative;
-    background-color: #1DB954;
-    align-content: center;
-    background-position: center center;
-    height:15vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
+    display: none;
 }
-#sect4 img {
-    max-width: 12vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display:inline;
-   
-}
-
 /*media querys*/
 
 @media screen and (max-width:1000px){
+    nav ul {
+        display:flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        right:2vh;
+        margin-right: 2vh;
+        align-content: flex-end;
+        
+
+    }
+    nav ul li {
+        padding:2px;
+        font-size: smaller;
+        text-align: end;
+    }
     
+    }
     #sect3>img{
         display:none;
     }
     #sect3 #sect3-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center center;
         justify-items: center;
         margin:auto;
         flex-wrap:wrap;
         align-items:center
     }
+    
     #sect3 div img{
         padding-bottom: 2vh;
     }
+    #sect2 {
+        margin-top:3vh;
+    }
+    #sect2 #subheading{
+        display:inline;
+        margin-top: 4vh;
+        margin-bottom: 3.5vh;
+        padding-bottom: 2vh;
+        margin-left: 0;
+        margin-right: 0;
+        text-align:center;
+        color:black;
+        font-size: 2rem;
+        font-weight: bold;
+        border-bottom:0.7vh;
+        border-color:#1DB954;;
+        border-style: solid;
+    }
+    #sect4 {
+        display:block;
+        position:relative;
+        background-color: #1DB954;
+        align-content: center;
+        background-position: center center;
+        height:10vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    #container-footer {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: row;
+    }
+    #sect4 img {
+        max-width: 8vh;}
+    #sect4 p{
+            display:inline;
+            right:4vh;
+            color:white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing:2px;
+            padding-left:2vh;
 }
-    
-
+}
