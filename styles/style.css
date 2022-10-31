@@ -203,7 +203,7 @@ nav img {
         text-align: end;
     }
     
-    }
+    
     #sect3>img{
         display:none;
     }
@@ -219,6 +219,9 @@ nav img {
     
     #sect3 div img{
         padding-bottom: 2vh;
+    }
+    #lista-final{
+        text-align: center;
     }
     #sect2 {
         margin-top:3vh;
