@@ -21,6 +21,7 @@ nav {
     position: -webkit-sticky;
     top:0;
     flex-wrap: wrap;
+    z-index:100;
 }
 nav ul {
     display:flex;
@@ -194,7 +195,7 @@ nav img {
         right:2vh;
         margin-right: 2vh;
         align-content: flex-end;
-        
+     
 
     }
     nav ul li {
@@ -203,23 +204,32 @@ nav img {
         text-align: end;
     }
     
-    
-    #sect3>img{
-        display:none;
-    }
-    #sect3 #sect3-container {
+    .header {
+        max-height: 80vh;
         display: flex;
+        background-image: url('../images/landing.jpg');
+        background-size: cover;
+        justify-content:baseline;
         flex-direction: column;
-        justify-content: center center;
-        justify-items: center;
-        margin:auto;
-        flex-wrap:wrap;
-        align-items:center
+        width: 100%;
+        padding-bottom: 20%;
+    }
+    #heading {
+        font-size: 4rem;
+        text-align: center;
+        padding-bottom: 6%;
     }
     
-    #sect3 div img{
-        padding-bottom: 2vh;
+    #sect1 p {
+        padding: 3% 10%;
+        text-align: center;
+        color: white;
+        font-weight: 100;
+        letter-spacing: 0.2vh;
+        font-size: 1rem;
+        padding-top: 1.5%;
     }
+    
     #lista-final{
         text-align: center;
     }
@@ -240,6 +250,26 @@ nav img {
         border-bottom:0.7vh;
         border-color:#1DB954;;
         border-style: solid;
+    }
+    #sect3>img{
+        display:none;
+    }
+    #sect3 #sect3-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center center;
+        justify-items: center;
+        margin:auto;
+        flex-wrap:wrap;
+        align-items:center
+    }
+    
+    #sect3 div img{
+        padding-bottom: 2vh;
+    }
+    #kanye-heading{
+        padding:0 0 2vh 0;
+        font-size: 2rem;
     }
     #sect4 {
         display:block;
