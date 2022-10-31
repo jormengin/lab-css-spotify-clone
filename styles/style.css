@@ -7,18 +7,21 @@ html {
 /* configuracion NAV bar */
 
 nav {
-    min-width: 100%;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content:space-between;
     align-items: center;
     position: fixed;
+    position: -webkit-sticky;
+    top:0;
+    flex-wrap: wrap;
 }
 nav ul {
     display:flex;
     justify-content: flex-end;
     flex-direction: row;
-    right:2vh
+    right:2vh;
 }
 
 nav ul li {
@@ -88,7 +91,7 @@ nav img {
     justify-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 18vh;
+    padding-bottom: 12vh;
     flex-wrap: wrap;
 }
 #sect2 h4{
@@ -130,21 +133,21 @@ nav img {
     display:inline;
 }
 #sect3 div img {
-  margin: 10vh 0 7vh 0;
   max-width: 35vh;
+  align-items: center;
 }
 
 #sect3 #sect3-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left:10vh;
-    margin-right: 10vh;
+    justify-items: center;
+    margin:10vh 10vh 0;
     flex-wrap:wrap;
     align-items:center
 }
 #lista-final{
-    padding:5vh 0;
+    padding:5vh;
 }
 #kanye-heading{
     display:inline-block;
@@ -171,4 +174,46 @@ nav img {
     padding:0.75vh 0;
     font-size: 1.2rem;
 }
+
+
+#sect4 {
+    position:relative;
+    background-color: #1DB954;
+    align-content: center;
+    background-position: center center;
+    height:15vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+#sect4 img {
+    max-width: 12vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:inline;
+   
+}
+
+/*media querys*/
+
+@media screen and (max-width:1000px){
+    
+    #sect3>img{
+        display:none;
+    }
+    #sect3 #sect3-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: center;
+        margin:auto;
+        flex-wrap:wrap;
+        align-items:center
+    }
+    #sect3 div img{
+        padding-bottom: 2vh;
+    }
+}
+    
 
