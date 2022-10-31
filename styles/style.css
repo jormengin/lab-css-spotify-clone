@@ -70,7 +70,7 @@ nav img {
     margin-bottom: 2vh;
 }
 #sect2 #subheading{
-display:inline-block;
+    display:inline-block;
     margin-top: 4vh;
     margin-bottom: 3.5vh;
     padding-bottom: 2vh;
@@ -102,6 +102,7 @@ display:inline-block;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly; 
+    margin-top: 5vh;
 }
 #sect2 p {
     font-weight: 100;
@@ -109,4 +110,65 @@ display:inline-block;
     max-width: 30vh;
 }
 
+/* Section 3 */
+
+#sect3 {
+    position:relative;
+    background-color: #1DB954;
+    align-content: center;
+    background-position: center center;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    color:white;
+}
+#sect3>img{
+    max-width: 12vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:inline;
+}
+#sect3 div img {
+  margin: 10vh 0 7vh 0;
+  max-width: 35vh;
+}
+
+#sect3 #sect3-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:10vh;
+    margin-right: 10vh;
+    flex-wrap:wrap;
+    align-items:center
+}
+#lista-final{
+    padding:5vh 0;
+}
+#kanye-heading{
+    display:inline-block;
+    font-size: 1.5rem;
+    border-bottom:0.4vh;
+    border-color:white;
+    border-style: solid;
+    margin-bottom: 5vh;
+    letter-spacing: 4px;
+    padding:2vh 0 ;
+}
+#sect3 h6{
+    margin-bottom: 3vh;
+    margin-top:3vh;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing:2px;
+}
+#sect3 article{
+    font-weight: 100;
+}
+
+#sect3 article p{
+    padding:0.75vh 0;
+    font-size: 1.2rem;
+}
 
