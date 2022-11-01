@@ -1,3 +1,4 @@
+
 html {
     font-family: releway, sans-serif;
     font-size: 16px;
@@ -185,7 +186,9 @@ nav img {
 #sect4 {
     display: none;
 }
-/*media querys*/
+
+
+/*media querys. YOU HAVE NO POWER HERE.*/
 
 @media screen and (max-width:1000px){
     nav ul {
@@ -205,14 +208,14 @@ nav img {
     }
     
     .header {
-        max-height: 80vh;
+        max-height: 70vh;
         display: flex;
         background-image: url('../images/landing.jpg');
         background-size: cover;
         justify-content:baseline;
         flex-direction: column;
         width: 100%;
-        padding-bottom: 20%;
+        padding-bottom: 35%;
     }
     #heading {
         font-size: 4rem;
@@ -298,4 +301,7 @@ nav img {
             letter-spacing:2px;
             padding-left:2vh;
 }
+
+/* Experimentos y cosas raras, no mirar pls T.T */
+
 }
